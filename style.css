@@ -1,0 +1,88 @@
+.disney {
+background-color: yellow;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.carta-disney {
+text-align: center;
+}
+
+/* Espacio individual para cada imagen */
+
+.img-carta-pixar {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-marvel {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-lucasfilm {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-fox {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.h1-disney {
+color: blue;
+font-size: 46px;
+}
+
+
+/* =========================
+FRANQUICIAS QUE NO SON DISNEY
+========================= */
+
+.no-disney {
+background-color: green;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.carta-no-disney {
+text-align: center;
+}
+
+.img-carta-sony {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-dreamworks {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-paramount {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.img-carta-netflix {
+height: 10vh;
+width: 100px;
+object-fit: contain;
+}
+
+.h1-no-disney {
+color: black;
+font-size: 76px;
+}
