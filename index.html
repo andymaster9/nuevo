@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Franquicias</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<title>3-Column Preview Card Component</title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
 
+body {
+background-color: #f2f2f2;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.card-container {
+display: flex;
+width: 800px;
+border-radius: 8px;
+overflow: hidden;
+}
+
+.card {
+flex: 1;
+padding: 40px;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.sedans {
+background-color: #e28525;
+}
+
+.suvs {
+background-color: #016972;
+}
+
+.luxury {
+background-color: #00403f;
+}
+
+.icon {
+width: 50px;
+height: 40px;
+margin-bottom: 25px;
+}
+
+h2 {
+font-size: 24px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 14px;
+line-height: 1.6;
+opacity: 0.8;
+margin-bottom: 40px;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 25px;
+background-color: white;
+border-radius: 25px;
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+width: fit-content;
+}
+
+.sedans .btn { color: #e28525; }
+.suvs .btn { color: #016972; }
+.luxury .btn { color: #00403f; }
+</style>
+</head>
 <body>
 
-<!-- FRANQUICIAS DE DISNEY -->
-
-<div class="disney">
-
-<div class="carta-disney">
-<img class="img-carta-pixar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjs4LhGGLbTXmtTbGDzw09AIIQx56gU9p2EWmABIB8A&s=10" alt="Imagen de Pixar">
-<h1 class="h1-disney">PIXAR</h1>
-<p>Pixar es una franquicia de Disney dedicada a películas de animación.</p>
+<div class="card-container">
+<!-- Columna Sedans -->
+<div class="card sedans">
+<div>
+<img class="icon" src="icon-sedans.svg" alt="Sedans">
+<h2>Sedans</h2>
+<p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+</div>
+<a href="#" class="btn">Learn More</a>
 </div>
 
-<div class="carta-disney">
-<img class="img-carta-marvel" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS65tBF3-R42Rbk-bbG-9vGVgkSHXbCHKHQiflaj1VHpg&s=10" alt="Imagen de Marvel">
-<h1 class="h1-disney">MARVEL</h1>
-<p>Marvel es una franquicia conocida por sus superhéroes y películas.</p>
+<!-- Columna SUVs -->
+<div class="card suvs">
+<div>
+<img class="icon" src="icon-suvs.svg" alt="SUVs">
+<h2>SUVs</h2>
+<p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+</div>
+<a href="#" class="btn">Learn More</a>
 </div>
 
-<div class="carta-disney">
-<img class="img-carta-lucasfilm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0-QSibWfnIu8md7b2YyJNVzFJO7Hbcy0jkJP52HaNQQ&s=10" alt="Imagen de Lucasfilm">
-<h1 class="h1-disney">LUCASFILM</h1>
-<p>Lucasfilm es conocida principalmente por Star Wars.</p>
+<div class="card luxury">
+<div>
+<img class="icon" src="icon-luxury.svg" alt="Luxury">
+<h2>Luxury</h2>
+<p>Cruise in the most stylish vehicles without the hefty cost. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
 </div>
-
-<div class="carta-disney">
-<img class="img-carta-fox" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKiQ213RUBBnQxRFG6gsAyquxtfuAbo3SWPGqjurUTg&s=10" alt="Imagen de Fox">
-<h1 class="h1-disney">FOX</h1>
-<p>FOX forma parte de las propiedades adquiridas por Disney.</p>
+<a href="#" class="btn">Learn More</a>
 </div>
-
-</div>
-
-
-<!-- FRANQUICIAS QUE NO SON DE DISNEY -->
-
-<div class="no-disney">
-
-<div class="carta-no-disney">
-<img class="img-carta-sony" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV24d7kyOFckiRBdItTpF90SYqGxGP7PJg7bcHtoabrA&s=10" alt="Imagen de Sony">
-<h1 class="h1-no-disney">SONY</h1>
-<p>Sony Pictures es un estudio cinematográfico.</p>
-</div>
-
-<div class="carta-no-disney">
-<img class="img-carta-dreamworks" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzOwjQF5LxrMmTrQtaKaCqiR4GvEBsI_z7kVaQOvk9MA&s=10" alt="Imagen de DreamWorks">
-<h1 class="h1-no-disney">DREAMWORKS</h1>
-<p>DreamWorks es conocida por películas como Shrek.</p>
-</div>
-
-<div class="carta-no-disney">
-<img class="img-carta-paramount" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDi9tHkWEcrj5HYojZ9oQ4bEnJvotuP6zZxr8_vVVLPw&s=10" alt="Imagen de Paramount">
-<h1 class="h1-no-disney">PARAMOUNT</h1>
-<p>Paramount es un estudio de cine y entretenimiento.</p>
-</div>
-
-<div class="carta-no-disney">
-<img class="img-carta-netflix" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyL-_pBg755s5pHUBIfySJZrD6Vp04meZS9bXkaknlYw&s" alt="Imagen de Netflix">
-<h1 class="h1-no-disney">NETFLIX</h1>
-<p>Netflix es una plataforma de entretenimiento.</p>
-</div>
-
 </div>
 
 </body>
-
 </html>

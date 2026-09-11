@@ -1,88 +1,60 @@
-.disney {
-background-color: yellow;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
-.carta-disney {
-text-align: center;
-}
-
-/* Espacio individual para cada imagen */
-
-.img-carta-pixar {
-height: 10vh;
-width: 100px;
-object-fit: contain;
-}
-
-.img-carta-marvel {
-height: 10vh;
-width: 100px;
-object-fit: contain;
-}
-
-.img-carta-lucasfilm {
-height: 10vh;
-width: 100px;
-object-fit: contain;
-}
-
-.img-carta-fox {
-height: 10vh;
-width: 100px;
-object-fit: contain;
-}
-
-.h1-disney {
-color: blue;
-font-size: 46px;
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background-color: #f4f6f8;
+color: #1a1a1a;
+line-height: 1.6;
+padding: 20px;
 }
 
 
-/* =========================
-FRANQUICIAS QUE NO SON DISNEY
-========================= */
-
-.no-disney {
-background-color: green;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.container {
+max-width: 800px;
+margin: 0 auto;
+background-color: #ffffff;
+padding: 24px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.carta-no-disney {
-text-align: center;
+
+h1, h2, h3 {
+color: #111827;
+margin-bottom: 12px;
 }
 
-.img-carta-sony {
-height: 10vh;
-width: 100px;
-object-fit: contain;
+p {
+margin-bottom: 16px;
+color: #4b5563;
 }
 
-.img-carta-dreamworks {
-height: 10vh;
-width: 100px;
-object-fit: contain;
+.btn {
+display: inline-block;
+padding: 10px 20px;
+font-size: 14px;
+font-weight: 600;
+color: #ffffff;
+background-color: #2563eb;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
 }
 
-.img-carta-paramount {
-height: 10vh;
-width: 100px;
-object-fit: contain;
+.btn:hover {
+background-color: #1d4ed8;
 }
 
-.img-carta-netflix {
-height: 10vh;
-width: 100px;
-object-fit: contain;
-}
-
-.h1-no-disney {
-color: black;
-font-size: 76px;
+.card {
+border: 1px solid #e5e7eb;
+border-radius: 6px;
+padding: 16px;
+margin-top: 16px;
+background-color: #fafafa;
 }
