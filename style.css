@@ -1,81 +1,64 @@
-
 body {
-background-color: #f2f2f2;
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-margin: 0;
+background-color: #d6e2f0;
+font-family: Arial;
+text-align: center;
 }
 
-.tarjeta {
+.card {
 background-color: white;
 width: 300px;
+margin: 50px auto;
 border-radius: 10px;
-overflow: hidden;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.imagen-producto {
-width: 100%;
-height: auto;
-display: block;
-}
-
-.contenido {
 padding: 20px;
 }
 
-.categoria {
-color: #777;
-font-size: 12px;
-letter-spacing: 2px;
-margin: 0 0 10px 0;
-}
-
-.titulo {
-font-size: 20px;
-color: #333;
-margin: 0 0 10px 0;
-}
-
-.descripcion {
-font-size: 14px;
-color: #666;
-line-height: 1.4;
-margin: 0 0 15px 0;
-}
-
-.precios {
-margin-bottom: 15px;
-}
-
-.precio-actual {
-font-size: 22px;
-font-weight: bold;
-color: #1a5e42;
-margin-right: 10px;
-}
-
-.precio-anterior {
-font-size: 14px;
-color: #999;
-text-decoration: line-through;
-}
-
-.boton-agregar {
+.card img {
 width: 100%;
-background-color: #1a5e42;
+}
+
+h1 {
+color: #1f2e55;
+font-size: 20px;
+}
+
+p {
+color: #7280a7;
+font-size: 14px;
+}
+
+.plan {
+background-color: #f5f7ff;
+padding: 10px;
+margin: 15px 0;
+border-radius: 8px;
+}
+
+.plan span {
+color: #7280a7;
+font-size: 13px;
+}
+
+.plan a {
+color: blue;
+font-weight: bold;
+}
+
+.btn-1 {
+background-color: #3829e0;
 color: white;
 border: none;
-padding: 12px;
-border-radius: 5px;
-font-size: 14px;
+width: 100%;
+padding: 10px;
+border-radius: 8px;
 font-weight: bold;
-cursor: pointer;
 }
 
-.boton-agregar:hover {
-background-color: #12402d;
+.btn-2 {
+background-color: white;
+color: #7280a7;
+border: none;
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+font-weight: bold;
 }
