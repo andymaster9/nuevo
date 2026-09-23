@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Actividad - Tarjeta de Producto</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">MiTienda</div>
+<ul class="menu">
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Productos</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="seccion-principal">
+
+<div class="tarjeta">
+
+<div class="contenedor-imagen">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQKV9xYD32GDZzKpyynE9uDsSwa7_lmjS2o5wOTADpg&s=10" alt="Perfume Gabrielle" class="imagen">
+</div>
+
+<div class="contenedor-info">
+
+<p class="categoria">PERFUME</p>
+<h1 class="titulo">Gabrielle Essence Eau De Parfum</h1>
+<p class="descripcion">
+Una interpretación floral y solar compuesta por Olivier Polge, perfumista de la Casa CHANEL.
+</p>
+
+<div class="precios">
+<span class="precio-actual">$149.99</span>
+<span class="precio-anterior">$169.99</span>
+</div>
+
+<form class="formulario-compra">
+<div class="campo">
+<label for="cantidad">Cantidad:</label>
+<input type="number" id="cantidad" name="cantidad" value="1" min="1">
+</div>
+
+<div class="campo">
+<label for="tamano">Tamaño:</label>
+<select id="tamano" name="tamano">
+<option value="50ml">50 ml</option>
+<option value="100ml">100 ml</option>
+</select>
+</div>
+
+<button type="submit" class="boton-comprar">Añadir al carrito</button>
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
