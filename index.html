@@ -2,118 +2,25 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>3-Column Preview Card Component</title>
-<style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-}
-
-body {
-background-color: #f2f2f2;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-}
-
-.card-container {
-display: flex;
-width: 800px;
-border-radius: 8px;
-overflow: hidden;
-}
-
-.card {
-flex: 1;
-padding: 40px;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.sedans {
-background-color: #e28525;
-}
-
-.suvs {
-background-color: #016972;
-}
-
-.luxury {
-background-color: #00403f;
-}
-
-.icon {
-width: 50px;
-height: 40px;
-margin-bottom: 25px;
-}
-
-h2 {
-font-size: 24px;
-text-transform: uppercase;
-margin-bottom: 20px;
-}
-
-p {
-font-size: 14px;
-line-height: 1.6;
-opacity: 0.8;
-margin-bottom: 40px;
-}
-
-.btn {
-display: inline-block;
-padding: 12px 25px;
-background-color: white;
-border-radius: 25px;
-text-decoration: none;
-font-size: 14px;
-font-weight: bold;
-width: fit-content;
-}
-
-.sedans .btn { color: #e28525; }
-.suvs .btn { color: #016972; }
-.luxury .btn { color: #00403f; }
-</style>
+<title>Universidad UABCS</title>
 </head>
 <body>
+<header>
+<h1>Bienvenidos a la UABCS</h1>
+</header>
 
-<div class="card-container">
-<!-- Columna Sedans -->
-<div class="card sedans">
-<div>
-<img class="icon" src="icon-sedans.svg" alt="Sedans">
-<h2>Sedans</h2>
-<p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
-</div>
-<a href="#" class="btn">Learn More</a>
-</div>
+<main>
+<section class="oferta">
+<h2>Oferta Educativa</h2>
+<p>Conoce nuestras carreras</p>
+<p>Ingeniería en Desarrollo de Software</p>
+<img src="universidad.jpg" alt="Instalaciones de la Universidad UABCS">
+<a href="carreras.html">Ver carreras</a>
+</section>
+</main>
 
-<!-- Columna SUVs -->
-<div class="card suvs">
-<div>
-<img class="icon" src="icon-suvs.svg" alt="SUVs">
-<h2>SUVs</h2>
-<p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
-</div>
-<a href="#" class="btn">Learn More</a>
-</div>
-
-<div class="card luxury">
-<div>
-<img class="icon" src="icon-luxury.svg" alt="Luxury">
-<h2>Luxury</h2>
-<p>Cruise in the most stylish vehicles without the hefty cost. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
-</div>
-<a href="#" class="btn">Learn More</a>
-</div>
-</div>
-
+<footer>
+<h2>Información de contacto</h2>
+</footer>
 </body>
 </html>
