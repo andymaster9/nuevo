@@ -1,0 +1,7 @@
+.tarjeta {
+max-width: 400px;
+padding: 20px;
+margin: 20px auto;
+border: 2px solid #ccc;
+box-sizing: border-box;
+}
