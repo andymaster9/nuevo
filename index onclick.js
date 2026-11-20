@@ -25,9 +25,8 @@ let inputUsuario = document.getElementById("nombre").value;
 let inputContrasena = document.getElementById("poder").value;
 
 if (inputUsuario === usuario && inputContrasena === contrasena) {
-console.log("Bienvenido " + nombre);
+console.log("Acceso permitido. Bienvenido " + nombre);
 } else {
-console.log("Usuario o contraseña incorrectos");
+console.log("Acceso denegado");
 }
 }
-
